@@ -9,7 +9,7 @@ from streamlit_drawable_canvas import st_canvas
 st.set_page_config(
     page_title="MNIST",
     layout="centered",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
     menu_items=None,
 )
 
@@ -170,7 +170,7 @@ with left:
         height=canvas_size,
         width=canvas_size,
         drawing_mode='freedraw',
-        display_toolbar=True,
+        display_toolbar=False,
         key=f'canvas_{st.session_state.canvas_key}',
     )
     # Rensa-knapp under canvas
